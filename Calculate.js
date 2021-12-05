@@ -2,14 +2,6 @@ import React, {useState} from "react";
 import {Text,View,TextInput,StyleSheet,Button,Modal} from "react-native";
 import SQLite from 'react-native-sqlite-storage';
 
-const db = SQLite.openDatabase(
-    {
-        name:'MainDB',
-        location: 'default',
-    },
-    ()=>{},
-    error => {console.log(error)}
-)
 export default function Calculate ()
 {
    
@@ -43,7 +35,7 @@ export default function Calculate ()
 
     return(
         /* 5 окошек */
-    <View>
+    <View style = {{flex:0.5}}>
         <View style = {styles.showValues}>
             <Text>{Q}</Text>
             <Text>{m}</Text>
@@ -109,6 +101,7 @@ export default function Calculate ()
      {
         poles:
         {
+            flex:0.125,
             color:'black',
             flexDirection:'row',
         },

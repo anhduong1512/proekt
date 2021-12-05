@@ -28,7 +28,7 @@ export default function Choice({navigation}) {
           <MaterialCommunityIcons 
           name="gas-cylinder" size={24} color="red" 
           onPress = {loadScreen}/>
-          <Text> 99руб/мес </Text>
+          <Text> 99р/мес </Text>
           </View> 
       </View>
     )
