@@ -5,6 +5,7 @@ import * as Font from 'expo-font';
 import AppLoading from 'expo-app-loading';
 import MainStack from './navigate';
 
+
 const fonts = () => Font.loadAsync({ 
     'zen': require('./assets/ZenKurenaido-Regular.ttf')
   }); 
